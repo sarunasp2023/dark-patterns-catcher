@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dark pattern catcher</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="styles/index.css">
+</head>
+<body>
+	<div class="main-content">
+    <h1>Dark Pattern Catcher</h1>
+    <div id="darkPatternsResults" class="results-section">
+      <p>Total dark patterns found: <span id="darkPatternsCount">0</span><p>
+      <p id="found-pattern-cases"><p>
+      <p id="countdownTimerSection"><a href="https://www.deceptive.design/types/fake-urgency" target=”_blank”>Fake urgency</a>: <span id="countdownTimerCount">0</span></p>
+      <p id="preselectionSection"><a href="https://www.deceptive.design/types/preselection" target=”_blank”>Preselection</a>: <span id="preselectionCount">0</span></p>
+      <p id="misdirectionSection"><a href="https://www.deceptive.design/types/visual-interference" target="_blank">Misdirection</a>: <span id="misdirectionCount">0</span></p>
+      <p id="scarcitySection"><a href="https://www.deceptive.design/types/fake-scarcity" target="_blank">Scarcity</a>: <span id="scarcityCount">0</span></p>
+      <p id="disguisedAdSection"><a href="https://www.deceptive.design/types/disguised-ads" target="_blank">Disguised ad</a>: <span id="disguisedAdCount">0</span></p>
+      <p id="socialProofSection"><a href="https://www.deceptive.design/types/fake-social-proof" target="_blank">Social proof</a>: <span id="socialProofCount">0</span></p>
+    </div>
+    <div class="settings-section">
+      <h2>Settings</h2>
+      <div class="settings-highlight">
+        <div class="alert-text">
+            <a id="highlightPatternAlert" href="#">Please refresh the page to see the applied changes</a>
+        </div>
+        <div class="highlightPatternSwitch-container">
+          <div>
+            <span class="setting-name">Highlight dark pattern</span>
+          </div>
+          <div class="highlightPatternSwitch-control">
+            <label class="switch">
+              <input id="highlightSwitch" type="checkbox">
+              <span class="slider round"></span>
+            </label> 
+          </div>
+        </div>
+      </div>
+      <div class="settings-modify">
+        <div  class="alert-text">
+          <a id="removePatternAlert" href="#">Please refresh the page to see the applied changes</a>
+        </div>
+        <div class="removePatternSwitch-container">
+          <div>
+            <span class="setting-name">Remove dark patterns</span>
+          </div>
+          <div class="removePatternSwitch-control">
+            <label class="switch">
+              <input id="modifySwitch" type="checkbox">
+              <span class="slider round"></span>
+            </label>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="supported-dark-patterns-section">
+      <h2>Supported dark pattern types</h2>
+      <div class="supported-dark-patterns-list">
+        <ul>
+          <li>Preselection</li>
+          <li>Fake urgency</li>
+          <li>Misdirection (LT/EN)</li>
+          <li>Scarcity (LT/EN)</li>
+          <li>Fake social proof (LT/EN)</li>
+          <li>Disguised ads</li>        
+        </ul>
+      </div>
+    </div>
+  </div>
+  <script src="scripts/index.js"></script>
+</body>
+</html>

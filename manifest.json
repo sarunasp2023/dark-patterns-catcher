@@ -1,0 +1,41 @@
+{
+    "name": "Dark pattern catcher",
+    "version": "1.0.0",
+    "description": "Detects and highlights various types of dark patterns in websites. r",
+    "manifest_version": 3,
+    "author": "Sarunas Praspaliauskas",
+    "content_scripts": [{
+      "js": ["scripts/content.js",
+      "scripts/darkPatterns/countdownTimer.js",
+      "scripts/darkPatterns/preselection.js",
+      "scripts/darkPatterns/misdirection.js",
+      "scripts/darkPatterns/scarcity.js",
+      "scripts/darkPatterns/disguisedAd.js",
+      "scripts/darkPatterns/socialProof.js"],
+      "css": ["styles/content.css"],
+      "matches": ["https://*/*"]
+    }],
+    "action":{
+        "default_popup": "index.html",
+        "default_title": "Dark pattern catcher",
+        "default_icon": 
+        {
+          "16": "/images/logo16.png",
+          "32": "/images/logo32.png",
+          "48": "/images/logo48.png",
+          "128": "/images/logo128.png"
+        }
+    },
+    "icons":{
+      "16": "/images/logo16.png",
+      "32": "/images/logo32.png",
+      "48": "/images/logo48.png",
+      "128": "/images/logo128.png"
+    },
+    "permissions": [
+        "tabs", "scripting", "storage"
+    ],
+    "host_permissions": [
+        "<all_urls>"
+       ]
+}

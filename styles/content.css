@@ -1,0 +1,12 @@
+.highlighted-dark-pattern {
+  border: 3px dashed red;
+}
+
+.modified-dark-pattern {
+  border: 3px dashed green;
+}
+
+.dark-pattern {
+  position: relative;
+  overflow: hidden;
+}
